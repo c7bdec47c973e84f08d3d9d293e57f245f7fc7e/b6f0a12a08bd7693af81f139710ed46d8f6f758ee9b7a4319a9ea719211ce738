@@ -15,7 +15,7 @@ export default function Home() {
         <p className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           Let&apos;s get started with Vercel.
         </p>
-        <ul className="list-disc list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-decimal list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Push to a branch to create a preview deployment.
           </li>
@@ -25,7 +25,7 @@ export default function Home() {
           <li className="mb-2">
             Merge to ship to production. Rollback instantly.
           </li>
-        </ul>
+        </ol>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
