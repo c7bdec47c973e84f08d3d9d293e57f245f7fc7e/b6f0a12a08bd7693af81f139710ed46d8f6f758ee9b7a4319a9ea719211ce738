@@ -1,10 +1,10 @@
 export function getNextUrl(): string | null {
   if (
-    process.env.TEAM_ID &&
-    process.env.PROJECT_NAME &&
-    process.env.VERCEL_ORIGIN
+    process.env.GET_STARTED_TEAM_ID &&
+    process.env.GET_STARTED_PROJECT_NAME &&
+    process.env.GET_STARTED_ORIGIN
   ) {
-    return `${process.env.VERCEL_ORIGIN}/new/starter-kit/step?teamId=${process.env.TEAM_ID}&projectName=${process.env.PROJECT_NAME}`;
+    return `${process.env.GET_STARTED_ORIGIN}/new/starter-kit/step?teamId=${process.env.GET_STARTED_TEAM_ID}&projectName=${process.env.GET_STARTED_PROJECT_NAME}`;
   }
   return null;
 }
