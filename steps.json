@@ -1,0 +1,21 @@
+{
+  "add-next-steps": {
+    "stepType": "pr",
+    "checkExistingInTemplateBranchName": "main",
+    "copyFromTemplateBranchName": "add-next-steps",
+    "commitToBranchName": "add-next-steps",
+    "prTitle": "Your first preview deployment, created by the Vercel bot",
+    "prBody": "## Hello, I’m the Vercel bot.\n\nTo update your Vercel Starter Kit page, I created a new branch, pushed some changes, and opened this pull request.\n\nThis creates a **preview deployment** on Vercel.\n\nClick **“Visit Preview”** on the table below to check it out.\n\n> [!NOTE]\n> You can still click **“Visit Preview”** while it’s **🔄 Building**, and the page will load when it becomes **✅ Ready**.",
+    "prBaseBranchName": "main",
+    "commitMessage": "Add next steps to get started with Vercel",
+    "filePaths": ["app/page.tsx"]
+  },
+  "fix-lists": {
+    "stepType": "commit",
+    "checkExistingInTemplateBranchName": "add-next-steps",
+    "copyFromTemplateBranchName": "fix-lists",
+    "commitToBranchName": "add-next-steps",
+    "commitMessage": "Fix lists",
+    "filePaths": ["app/page.tsx"]
+  }
+}
