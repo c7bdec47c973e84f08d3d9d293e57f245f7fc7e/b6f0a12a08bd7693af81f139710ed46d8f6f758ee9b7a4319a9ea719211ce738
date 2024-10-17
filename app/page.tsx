@@ -26,7 +26,7 @@ export default function Home() {
             preview deployment.
           </p>
           <p className="mb-4">
-            For example, TRY SELECTING THIS TEXT and add a comment: “Let&apos;s
+            For example, try selecting this text and add a comment: “Let&apos;s
             use lowercase letters here.”
           </p>
           {nextUrl && (
