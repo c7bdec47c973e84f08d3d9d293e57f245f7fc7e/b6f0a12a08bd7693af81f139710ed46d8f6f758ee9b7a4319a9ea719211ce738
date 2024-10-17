@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getNextUrl } from "./get-next-url";
 
 export default function Home() {
-  const nextUrl = getNextUrl("first-preview-deployment");
+  const nextUrl = getNextUrl("lowercase-letters");
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -17,14 +17,23 @@ export default function Home() {
         />
         <div className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] leading-relaxed">
           <p className="mb-4">
-            Congratulations! You&apos;ve successfully deployed the Vercel
-            Starter Kit.
+            Congratulations! You&apos;ve successfully created your first preview
+            deployment for the Vercel Starter Kit — by creating and pushing to a
+            new branch.
+          </p>
+          <p className="mb-4">
+            Vercel lets you collaborate with others by commenting directly on a
+            preview deployment.
+          </p>
+          <p className="mb-4">
+            For example, TRY SELECTING THIS TEXT and add a comment: “Let&apos;s
+            use lowercase letters here.”
           </p>
           {nextUrl && (
             <p>
-              Next, let&apos;s create a pull request to improve this page. By
-              clicking the button below, the Vercel bot will create a pull
-              request for you.
+              Next, let&apos;s push a commit to fix the above issue. By clicking
+              the button below, the Vercel bot will push a commit to use
+              lowercase letters.
             </p>
           )}
         </div>
@@ -37,7 +46,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Create a pull request
+                Push a commit
               </a>
             </div>
             <a
