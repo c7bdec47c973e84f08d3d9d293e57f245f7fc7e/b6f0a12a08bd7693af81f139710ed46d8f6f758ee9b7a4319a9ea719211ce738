@@ -16,6 +16,7 @@
     "copyFromTemplateBranchName": "lowercase-letters",
     "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Lowercase letters",
-    "filePaths": ["app/page.tsx"]
+    "filePaths": ["app/page.tsx"],
+    "prComment": "Test comment"
   }
 }
