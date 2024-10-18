@@ -17,6 +17,5 @@
     "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Lowercase letters",
     "filePaths": ["app/page.tsx"],
-    "prComment": "Every new push creates another preview deployment.\n\nTake a look at the comment above, and wait until the status changes from **🔄 Building** to **✅ Ready**. Then, click  **“Visit Preview”** to view changes."
   }
 }
