@@ -13,13 +13,10 @@ export default function Home() {
             className="invert dark:invert-0"
             src="/vercel.svg"
             alt="Vercel logo"
-            width={50}
-            height={50}
+            width={20}
+            height={20}
             priority
           />
-          <div className="text-gray-500 hidden sm:block">
-            ← Comment “Let&apos;s make this smaller” here
-          </div>
         </div>
         <div className="text-center sm:text-left leading-relaxed">
           <p className="mb-4">
