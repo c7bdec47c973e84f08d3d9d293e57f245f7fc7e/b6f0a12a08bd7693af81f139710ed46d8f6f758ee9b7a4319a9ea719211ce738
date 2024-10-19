@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start max-w-md text-sm font-[family-name:var(--font-geist-mono)] ">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start max-w-md text-sm font-[family-name:var(--font-geist-mono)]">
         <div className="flex items-center gap-4">
           <Image
             className="invert dark:invert-0"
