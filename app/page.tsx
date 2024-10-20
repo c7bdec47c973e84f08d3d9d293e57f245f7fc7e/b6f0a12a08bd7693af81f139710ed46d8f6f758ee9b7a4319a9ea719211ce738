@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import bubbleSvg from "./bubble.svg";
 
 export default function Home() {
-  const stepName = "lowercase-letters";
+  const stepName = "smaller-triangle";
   const [nextUrlPrefix, setNextUrlPrefix] = useState<string>("");
 
   useEffect(() => {
