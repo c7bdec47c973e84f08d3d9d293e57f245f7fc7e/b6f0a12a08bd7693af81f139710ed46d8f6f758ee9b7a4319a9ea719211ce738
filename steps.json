@@ -10,12 +10,12 @@
     "commitMessage": "Update text to talk about preview deployment",
     "filePaths": ["app/page.tsx"]
   },
-  "lowercase-letters": {
+  "smaller-triangle": {
     "stepType": "commit",
     "checkExistingInTemplateBranchName": "first-preview-deployment",
-    "copyFromTemplateBranchName": "lowercase-letters",
+    "copyFromTemplateBranchName": "smaller-triangle",
     "commitToBranchName": "first-preview-deployment",
-    "commitMessage": "Lowercase letters",
+    "commitMessage": "Smaller triangle",
     "filePaths": ["app/page.tsx"],
     "prComment": "Test comment"
   }
