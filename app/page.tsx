@@ -11,7 +11,7 @@ export default function Home() {
     if (host !== "localhost") {
       setNextUrlPrefix(
         `https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/new/starter-kit/step?origin=${encodeURIComponent(
-          window.location.origin,
+          window.location.hostname,
         )}&stepName=`,
       );
     }
