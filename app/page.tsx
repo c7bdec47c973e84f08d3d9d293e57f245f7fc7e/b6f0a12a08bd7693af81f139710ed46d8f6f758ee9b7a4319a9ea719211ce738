@@ -33,7 +33,7 @@ export default function Home() {
             priority
           />
           <div className="text-gray-500 hidden sm:block">
-            ← Comment “Let&apos;s make this smaller” here
+            ← Comment “Let&apos;s make this smaller”
           </div>
         </div>
         <div className="text-center sm:text-left leading-relaxed">
