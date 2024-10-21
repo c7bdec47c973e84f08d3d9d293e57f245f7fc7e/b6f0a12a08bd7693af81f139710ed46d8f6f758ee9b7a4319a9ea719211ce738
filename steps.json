@@ -24,6 +24,6 @@
     "checkExistingInTemplateBranchName": "smaller-triangle",
     "commitToBranchName": "first-preview-deployment",
     "filePaths": ["app/page.tsx"],
-    "prComment": "### Click “Merge Pull Request” to merge the pull request. \n\nThis will create a new production deployment. Then, click on the link below to see the deployment progress on the Vercel dashboard.\n\n### [https://vercel.com/upgrade/starter-kit/{{teamSlug}}](https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/upgrade/starter-kit/{{teamSlug}})\n\n**Note:** Clicking the above link will show a modal asking you to try the **Pro trial.**\n\nSo far, you’ve collaborated with the Vercel bot using pull requests and preview comments. However, to collaborate with other developers, you need to be on the Pro plan. [Learn more on the Vercel pricing page](https://vercel.com/pricing)."
+    "prComment": "We merged the pull request. This will create a new production deployment.\n\nFinally, click on the link below to see the deployment progress on the Vercel dashboard.\n\n### [https://vercel.com/upgrade/starter-kit/{{teamSlug}}](https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/upgrade/starter-kit/{{teamSlug}})\n\n**Note:** Clicking the above link will show a modal asking you to try the **Pro trial.**\n\nSo far, you’ve collaborated with the Vercel bot using pull requests and preview comments. However, to collaborate with other developers, you need to be on the Pro plan. [Learn more on the Vercel pricing page](https://vercel.com/pricing)."
   }
 }
