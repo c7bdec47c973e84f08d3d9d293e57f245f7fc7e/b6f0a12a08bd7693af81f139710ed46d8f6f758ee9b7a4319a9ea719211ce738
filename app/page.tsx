@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import bubbleSvg from "./bubble.svg";
+import checkSvg from "./check.svg";
 
 export default function Home() {
   const stepName = "merge-comment";
@@ -35,29 +35,17 @@ export default function Home() {
         </div>
         <div className="text-center sm:text-left leading-relaxed">
           <p className="mb-4">
-            Congratulations! You&apos;ve created your first preview deployment
-            for the Vercel Starter Kit — by creating and pushing to a new
-            branch.
+            Awesome! By pushing a new commit, we&apos;ve updated our preview
+            deployment, and the triangle is now smaller.
           </p>
           <p className="mb-4">
-            Vercel lets you collaborate with others by commenting directly on a
-            preview deployment.
-          </p>
-          <p className="mb-4">
-            First, press &ldquo;C&rdquo; on your keyboard. Your cursor will
-            change to{" "}
-            <Image
-              src={bubbleSvg}
-              alt="the plus icon"
-              className="inline-flex w-6"
-            />
-            . Then, click on the triangle logo at the top and add a comment:
-            “Let&apos;s make this smaller”.
+            We can resolve the comment by selecting the comment and clicking{" "}
+            <Image src={checkSvg} alt="the plus icon" className="inline-flex" />
+            . This will update the check status on the pull request as well.
           </p>
           <p>
-            Next, let&apos;s push a commit to make this happen. By clicking the
-            button below, the Vercel bot will push a commit to make the triangle
-            logo smaller.
+            Finally, let&apos;s merge the pull request. This will a new
+            production deployment with these changes.
           </p>
         </div>
         <div className="flex flex-col gap-4 items-center sm:items-start">
@@ -68,7 +56,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Push a commit
+              Merge the pull request
             </a>
           </div>
           <a
