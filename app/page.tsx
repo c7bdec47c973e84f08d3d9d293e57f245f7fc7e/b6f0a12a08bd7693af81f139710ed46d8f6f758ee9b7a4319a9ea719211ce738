@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import bubbleSvg from "./bubble.svg";
 
 export default function Home() {
-  const stepName = "first-preview-deployment";
+  const stepName = "smaller-triangle";
   const [nextUrlPrefix, setNextUrlPrefix] = useState<string>("#");
 
   useEffect(() => {
@@ -22,23 +23,44 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start max-w-md text-sm font-[family-name:var(--font-geist-mono)]">
-        <Image
-          className="invert dark:invert-0"
-          src="/vercel.svg"
-          alt="Vercel logo"
-          width={50}
-          height={50}
-          priority
-        />
-        <div className="text-center sm:text-left font-[family-name:var(--font-geist-mono)] leading-relaxed">
+        <div className="flex items-center gap-4">
+          <Image
+            className="invert dark:invert-0"
+            src="/vercel.svg"
+            alt="Vercel logo"
+            width={50}
+            height={50}
+            priority
+          />
+          <div className="text-gray-500 hidden sm:block">
+            ← Comment here: “Let&apos;s make this smaller”
+          </div>
+        </div>
+        <div className="text-center sm:text-left leading-relaxed">
           <p className="mb-4">
-            Congratulations! You&apos;ve successfully deployed the Vercel
-            Starter Kit.
+            Congratulations! You&apos;ve created your first preview deployment
+            for the Vercel Starter Kit — by creating and pushing to a new
+            branch.
+          </p>
+          <p className="mb-4">
+            Vercel lets you collaborate with others by commenting directly on a
+            preview deployment.
+          </p>
+          <p className="mb-4">
+            First, press &ldquo;C&rdquo; on your keyboard. Your cursor will
+            change to{" "}
+            <Image
+              src={bubbleSvg}
+              alt="the plus icon"
+              className="inline-flex w-6"
+            />
+            . Then, click on the triangle logo at the top and add a comment:
+            “Let&apos;s make this smaller”.
           </p>
           <p>
-            Next, let&apos;s create a pull request to improve this page. By
-            clicking the button below, the Vercel bot will create a pull request
-            for you.
+            Next, let&apos;s push a commit to make this happen. By clicking the
+            button below, the Vercel bot will push a commit to make the triangle
+            logo smaller.
           </p>
         </div>
         <div className="flex flex-col gap-4 items-center sm:items-start">
@@ -49,7 +71,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Create a pull request
+              Push a commit
             </a>
           </div>
           <a
