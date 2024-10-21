@@ -44,7 +44,7 @@ export default function Home() {
             . This will update the check status on the pull request as well.
           </p>
           <p>
-            Finally, let&apos;s merge the pull request. This will a new
+            Finally, let&apos;s merge the pull request. This will create a new
             production deployment with these changes.
           </p>
         </div>
