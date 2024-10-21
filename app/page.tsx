@@ -53,8 +53,6 @@ export default function Home() {
             <a
               className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 font-[family-name:var(--font-geist-sans)]"
               href={`${nextUrlPrefix}${stepName}`}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               Merge the pull request
             </a>
@@ -62,8 +60,6 @@ export default function Home() {
           <a
             className="font-[family-name:var(--font-geist-mono)] text-gray-500 hover:underline"
             href={`${nextUrlPrefix}skip`}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Skip and go to dashboard
           </a>
