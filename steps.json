@@ -18,5 +18,12 @@
     "commitMessage": "Smaller triangle",
     "filePaths": ["app/page.tsx"],
     "prComment": "Test comment"
+  },
+  "merge-comment": {
+    "stepType": "comment",
+    "checkExistingInTemplateBranchName": "smaller-triangle",
+    "commitToBranchName": "first-preview-deployment",
+    "filePaths": ["app/page.tsx"],
+    "prComment": "Test comment https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/{{teamSlug}}/{{projectName}}"
   }
 }
