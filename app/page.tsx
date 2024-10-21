@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import bubbleSvg from "./bubble.svg";
 
 export default function Home() {
-  const stepName = "merge";
+  const stepName = "merge-comment";
   const [nextUrlPrefix, setNextUrlPrefix] = useState<string>("");
 
   useEffect(() => {
