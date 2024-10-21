@@ -20,7 +20,7 @@
     "prComment": "We just pushed a commit to make the triangle smaller. This creates a new preview deployment, which will be accessible via the same URL.\n\n### On the comment above, wait until the status changes from 🔄 Building to ✅ Ready, and then click “Visit Preview”.\n\n**Note:** If you had written a comment on the preview deployment, notice that the status check is ❌ failing below. This will be fixed when we resolve the comment."
   },
   "merge-comment": {
-    "stepType": "comment",
+    "stepType": "merge",
     "checkExistingInTemplateBranchName": "smaller-triangle",
     "commitToBranchName": "first-preview-deployment",
     "filePaths": ["app/page.tsx"],
