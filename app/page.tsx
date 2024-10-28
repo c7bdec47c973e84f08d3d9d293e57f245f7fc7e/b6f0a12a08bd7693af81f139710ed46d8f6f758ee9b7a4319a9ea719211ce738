@@ -68,8 +68,8 @@ export default function Home() {
           className="invert dark:invert-0"
           src={vercelSvg}
           alt="Vercel logo"
-          width={50}
-          height={50}
+          width={25}
+          height={25}
           priority
         />
         <div className="text-left font-[family-name:var(--font-geist-sans)] leading-relaxed">
