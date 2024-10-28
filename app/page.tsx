@@ -127,6 +127,8 @@ export default function Home() {
           <a
             className="font-[family-name:var(--font-geist-sans)] text-gray-500 hover:underline flex items-center justify-center text-sm h-10 font-medium"
             href={`${nextUrlPrefix}skip`}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Go to Dashboard
           </a>
