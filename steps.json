@@ -5,7 +5,7 @@
     "copyFromTemplateBranchName": "first-preview-deployment",
     "commitToBranchName": "first-preview-deployment",
     "prTitle": "Your first preview deployment, created by the Vercel bot",
-    "prBody": "#### Hello, I’m the Vercel bot.\n\n- To update your Vercel Starter Kit, I created a new branch, pushed some changes, and opened this pull request.\n- This creates a preview deployment on Vercel.\n\n#### Next Steps:\n\n- Wait for up to 60 seconds until the “Status” becomes “✅ Ready” on the table below.\n- Then click “Visit Preview” on the table below to view the deployment.",
+    "prBody": "#### Hello, I’m the Vercel bot.\n\n- To update your Vercel Starter Kit, I created a new branch, pushed some changes, and opened this pull request.\n- This creates a preview deployment on Vercel.\n\n#### Next Steps:\n\n- Wait for up to 60 seconds until the “Status” changes from “🔄 Building” to “✅ Ready” on the table below.\n- Then click “Visit Preview” to view the deployment.",
     "prBaseBranchName": "main",
     "commitMessage": "Update text to talk about preview deployment",
     "filePaths": ["app/page.tsx"]
@@ -17,7 +17,7 @@
     "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Smaller triangle",
     "filePaths": ["app/page.tsx"],
-    "prComment": "#### We just pushed a new commit.\n\n- This creates a new preview deployment, which will be accessible via the same URL.\n- If you had commented on the preview deployment, the status of this pull request becomes “Failing” (we’ll fix this next).\n\n#### Next Steps:\n\n- On the table above, wait for up to 60 seconds until the status changes from “Building” to “Ready”.\n- Then click “Visit Preview” again."
+    "prComment": "#### We just pushed a new commit.\n\n- This creates a new preview deployment, which will be accessible via the same URL.\n- If you had commented on the preview deployment, the status of this pull request becomes “Failing” (we’ll fix this next).\n\n#### Next Steps:\n\n- On the table above, wait for up to 60 seconds until the status changes from “🔄 Building” to “✅ Ready”.\n- Then click “Visit Preview” again."
   },
   "merge-comment": {
     "stepType": "merge",
