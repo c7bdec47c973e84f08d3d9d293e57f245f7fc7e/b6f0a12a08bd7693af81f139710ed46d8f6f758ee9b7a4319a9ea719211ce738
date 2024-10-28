@@ -17,7 +17,7 @@
     "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Smaller triangle",
     "filePaths": ["app/page.tsx"],
-    "prComment": "#### We just pushed a new commit.\n\n- This creates a new preview deployment, which will be accessible via the same URL.\n- If you had commented on the preview deployment, the status of this pull request becomes “Failing” (we’ll fix this next).\n\n#### Next Steps:\n\n- On the table above, wait for up to 60 seconds until the status changes from “🔄 Building” to “✅ Ready”.\n- Then click “Visit Preview” again."
+    "prComment": "#### We just pushed a new commit.\n\n- This creates a new preview deployment, which will be accessible via the same URL.\n- If you had commented on the preview deployment, the status of this pull request becomes “❌” (we’ll fix this next).\n\n#### Next Steps:\n\n- On the table above, wait for up to 60 seconds until the status changes from “🔄 Building” to “✅ Ready”.\n- Then click “Visit Preview” again."
   },
   "merge-comment": {
     "stepType": "merge",
