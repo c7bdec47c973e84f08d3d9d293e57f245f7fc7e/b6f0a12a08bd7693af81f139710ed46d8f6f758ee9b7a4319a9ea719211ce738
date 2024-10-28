@@ -99,7 +99,7 @@ export default function Home() {
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm h-10 font-[family-name:var(--font-geist-sans)]"
             href={`${nextUrlPrefix}${stepName}`}
           >
-            Create a pull request
+            Create a Pull Request
           </a>
           <a
             className="font-[family-name:var(--font-geist-sans)] text-gray-500 hover:underline flex items-center justify-center text-sm h-10 font-medium"
