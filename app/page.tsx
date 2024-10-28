@@ -82,14 +82,6 @@ export default function Home() {
                 <Check />
               </span>
               <span className="text-gray500">
-                <del>Deploy the Vercel Starter Kit Template</del>
-              </span>
-            </li>
-            <li className="flex gap-4 items-start mb-6">
-              <span className="inline-flex mt-0.5">
-                <Check />
-              </span>
-              <span className="text-gray500">
                 <del>
                   Next, let&apos;s create a pull request and start improving
                   this page.
@@ -103,7 +95,7 @@ export default function Home() {
               <span className="text-gray500">
                 <del>
                   Vercel lets you collaborate with others by commenting directly
-                  on a preview deployment. Press “C” on your keyboard and click
+                  on a preview deployment. Press “c” on your keyboard and click
                   on the triangle logo at the top. Leave a comment like{" "}
                   “Let&apos;s make this smaller”. Once you&apos;re done,
                   let&apos;s push a commit to make this happen.
