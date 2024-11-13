@@ -26,7 +26,7 @@ function Circle() {
 }
 
 export default function Home() {
-  const stepName = "first-preview-deployment";
+  const stepName = "smaller-triangle";
   const [nextUrlPrefix, setNextUrlPrefix] = useState<string>("#");
 
   useEffect(() => {
