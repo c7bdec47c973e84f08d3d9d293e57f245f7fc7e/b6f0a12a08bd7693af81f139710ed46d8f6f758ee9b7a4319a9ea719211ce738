@@ -1,4 +1,13 @@
 {
+  "step-name": {
+    "stepType": "commit",
+    "checkExistingInTemplateBranchName": "main",
+    "copyFromTemplateBranchName": "step-name",
+    "commitToBranchName": "first-preview-deployment",
+    "commitMessage": "Update step name",
+    "filePaths": ["app/page.tsx"],
+    "createBranch": true
+  },
   "first-preview-deployment": {
     "stepType": "pr",
     "checkExistingInTemplateBranchName": "main",
