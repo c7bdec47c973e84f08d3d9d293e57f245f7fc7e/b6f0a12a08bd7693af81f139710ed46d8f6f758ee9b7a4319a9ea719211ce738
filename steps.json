@@ -16,7 +16,7 @@
     "commitToBranchName": "first-preview-deployment",
     "prTitle": "Your first preview deployment, created by the Vercel bot",
     "prBody": "#### Hello, I’m the Vercel bot.\n\n- To update your Vercel Starter Kit, I created a new branch, pushed some changes, and opened this pull request.\n- This creates a preview deployment on Vercel.\n\n#### Next Steps:\n\n- Wait until the “Status” changes from “🔄 Building” to “✅ Ready” on the table below.\n- Then click “Visit Preview” to view the deployment.",
-    "prBaseBranchName": "main",
+    "prBaseBranchName": "first-preview-deployment",
     "commitMessage": "Update text to talk about preview deployment",
     "filePaths": ["app/page.tsx"]
   },
