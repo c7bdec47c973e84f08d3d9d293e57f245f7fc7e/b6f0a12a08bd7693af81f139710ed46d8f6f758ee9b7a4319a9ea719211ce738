@@ -6,7 +6,7 @@
     "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Update step name",
     "filePaths": ["app/page.tsx"],
-    "createBranch": true
+    "createBranch": true,
     "createBranchBaseName": "main"
   },
   "first-preview-deployment": {
