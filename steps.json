@@ -11,7 +11,7 @@
   },
   "first-preview-deployment": {
     "stepType": "pr",
-    "checkExistingInTemplateBranchName": "step-name",
+    "checkExistingInTemplateBranchName": "first-preview-deployment",
     "copyFromTemplateBranchName": "first-preview-deployment",
     "commitToBranchName": "first-preview-deployment",
     "prTitle": "Your first preview deployment, created by the Vercel bot",
