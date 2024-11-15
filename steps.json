@@ -1,32 +1,22 @@
 {
-  "warm-cache-first-preview-deployment": {
-    "stepType": "commit",
-    "checkExistingInTemplateBranchName": "main",
-    "copyFromTemplateBranchName": "first-preview-deployment",
-    "commitToBranchName": "warm-cache-first-preview-deployment",
-    "commitMessage": "Warm cache for first-preview-deployment",
-    "filePaths": ["app/page.tsx"],
-    "createBranch": true,
-    "createBranchBaseName": "main"
-  },
-  "warm-cache-smaller-triangle": {
-    "stepType": "commit",
-    "checkExistingInTemplateBranchName": "main",
-    "copyFromTemplateBranchName": "smaller-triangle",
-    "commitToBranchName": "smaller-triangle",
-    "commitMessage": "Warm cache for smaller-triangle",
-    "filePaths": ["app/page.tsx"],
-    "createBranch": true,
-    "createBranchBaseName": "main"
-  },
   "first-preview-deployment": {
     "stepType": "pr",
-    "checkExistingInTemplateBranchName": "main",
+    "checkExistingInTemplateBranchName": "first-preview-deployment",
     "copyFromTemplateBranchName": "first-preview-deployment",
     "commitToBranchName": "first-preview-deployment",
     "prTitle": "Your first preview deployment, created by the Vercel bot",
     "prBody": "#### Hello, I’m the Vercel bot.\n\n- To update your Vercel Starter Kit, I created a new branch, pushed some changes, and opened this pull request.\n- This creates a preview deployment on Vercel.\n\n#### Next Steps:\n\n- Wait until the “Status” changes from “🔄 Building” to “✅ Ready” on the table below.\n- Then click “Visit Preview” to view the deployment.",
-    "prBaseBranchName": "main",
+    "prBaseBranchName": "first-preview-deployment",
+    "commitMessage": "Update text to talk about preview deployment",
+    "filePaths": ["app/page.tsx"]
+  },
+  "first-preview-deployment-commit": {
+    "stepType": "commit",
+    "checkExistingInTemplateBranchName": "main",
+    "createBranch": true,
+    "createBranchBaseName": "first-preview-deployment",
+    "copyFromTemplateBranchName": "first-preview-deployment",
+    "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Update text to talk about preview deployment",
     "filePaths": ["app/page.tsx"]
   },
