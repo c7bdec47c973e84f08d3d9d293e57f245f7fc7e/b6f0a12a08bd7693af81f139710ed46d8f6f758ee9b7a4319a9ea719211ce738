@@ -27,7 +27,7 @@ function Circle() {
 
 export default function Home() {
   const stepName = "first-preview-deployment";
-  const [nextUrlPrefix, setNextUrlPrefix] = useState<string>("#");
+  const [nextUrlPrefix, setNextUrlPrefix] = useState("#");
 
   useEffect(() => {
     const host = window.location.host;
