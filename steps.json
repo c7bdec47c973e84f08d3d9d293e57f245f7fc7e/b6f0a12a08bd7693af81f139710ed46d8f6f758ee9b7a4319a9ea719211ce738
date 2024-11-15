@@ -14,7 +14,7 @@
     "stepType": "commit",
     "checkExistingInTemplateBranchName": "main",
     "createBranch": true,
-    "createBranchBaseName": "first-preview-deployment",
+    "createBranchBaseName": "main",
     "copyFromTemplateBranchName": "first-preview-deployment",
     "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Update text to talk about preview deployment",
