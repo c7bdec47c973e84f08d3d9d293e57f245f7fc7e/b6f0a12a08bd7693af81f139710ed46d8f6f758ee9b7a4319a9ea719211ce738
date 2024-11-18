@@ -9,8 +9,7 @@ const config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        gray900: "var(--gray-900)",
-        gray500: "var(--gray-500)",
+        secondary: "var(--secondary)",
       },
     },
   },
