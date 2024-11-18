@@ -48,20 +48,22 @@ export default function Home() {
           className="invert dark:invert-0"
           src={vercelSvg}
           alt="Vercel logo"
-          width={50}
-          height={50}
+          width={150}
+          height={150}
           priority
         />
         <div className="text-left font-[family-name:var(--font-geist-sans)] leading-relaxed">
           <h1 className="mb-6 font-semibold">Kudos on the deployment!</h1>
           <ul>
-            <li className="flex gap-4 items-center">
-              <span className="inline-flex">
+            <li className="flex gap-3 items-start">
+              <span className="inline-flex mt-[0.3rem]">
                 <Circle />
               </span>
               <span className="text-secondary">
-                We&apos;ve also created a pull request to make changes to this
-                page. Click below to view:
+                Next, let&apos;s try to improve this page. Maybe the triangle
+                logo is too big. To make it easy for you, we&apos;ve already
+                created a pull request to make the triangle smaller. Check it
+                out:
               </span>
             </li>
           </ul>
