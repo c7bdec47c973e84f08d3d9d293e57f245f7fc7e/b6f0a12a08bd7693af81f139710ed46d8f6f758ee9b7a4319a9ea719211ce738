@@ -1,14 +1,13 @@
-import localFont from "next/font/local";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+const geistSans = Geist({
   variable: "--font-geist-sans",
-  weight: "100 900",
+  subsets: ["latin"],
 });
 
 export const metadata = {
-  title: "Vercel Starter Kit",
+  title: "Vercel Tutor",
   description: "Get started with Vercel.",
 };
 
