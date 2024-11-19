@@ -70,14 +70,14 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm h-10 font-[family-name:var(--font-geist-sans)]"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] h-12 font-[family-name:var(--font-geist-sans)]"
             href={`${nextUrlPrefix}${stepName}`}
           >
             View Pull Request
           </a>
           <a
-            className="font-[family-name:var(--font-geist-sans)] text-secondary hover:underline flex items-center justify-center text-sm h-10 font-medium"
-            href={`${nextUrlPrefix}skip`}
+            className="font-[family-name:var(--font-geist-sans)] text-secondary hover:underline flex items-center justify-center h-12 font-medium"
+            href="https://vercel.com/dashboard?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
             target="_blank"
             rel="noopener noreferrer"
           >
