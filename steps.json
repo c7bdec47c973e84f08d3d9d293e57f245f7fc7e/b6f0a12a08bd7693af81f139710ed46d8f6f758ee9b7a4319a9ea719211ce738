@@ -1,5 +1,5 @@
 {
-  "view-pull-request": {
+  "view-pull-request-pr": {
     "stepType": "pr",
     "checkExistingInTemplateBranchName": "view-pull-request",
     "copyFromTemplateBranchName": "view-pull-request",
@@ -28,7 +28,7 @@
     "commitMessage": "Add helpful links",
     "filePaths": ["app/page.js"],
   },
-  "commit-and-merge": {
+  "commit-and-merge-merge": {
     "stepType": "merge",
     "checkExistingInTemplateBranchName": "commit-and-merge",
     "commitToBranchName": "first-preview-deployment",
