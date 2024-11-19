@@ -5,7 +5,7 @@
     "copyFromTemplateBranchName": "view-pull-request",
     "commitToBranchName": "first-preview-deployment",
     "prTitle": "Your first preview deployment, created by the Vercel bot",
-    "prBody": "#### Hello, I’m the Vercel bot.\n\n- To update your Vercel Starter Kit, I created a new branch, pushed some changes, and opened this pull request.\n- This creates a preview deployment on Vercel.\n\n#### Next Steps:\n\n- Wait until the “Status” changes from “🔄 Building” to “✅ Ready” on the table below.\n- Then click “Visit Preview” to view the deployment.",
+    "prBody": "#### Hello, I’m the Vercel bot.\n\n- To update your Vercel Tutor template, I created a new branch, pushed some changes, and opened this pull request.\n- This creates a preview deployment on Vercel.\n\n#### Next Steps:\n\n- Wait until the “Status” changes from “🔄 Building” to “✅ Ready” on the table below.\n- Then click “Visit Preview” to view the deployment.",
     "prBaseBranchName": "first-preview-deployment",
     "commitMessage": "Make triangle smaller",
     "filePaths": ["app/page.js"]
@@ -33,6 +33,6 @@
     "checkExistingInTemplateBranchName": "commit-and-merge",
     "commitToBranchName": "first-preview-deployment",
     "filePaths": ["app/page.js"],
-    "prComment": "#### We merged the pull request.\n\n- This creates a new production deployment.\n\n#### Next Step:\n\n- [Click here to see the deployment progress on the Vercel dashboard](https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/{{teamSlug}}/{{projectName}}?starter-kit=done)."
   }
+    "prComment": "#### We merged the pull request.\n\n- This creates a new production deployment.\n\n#### Next Step:\n\n- [Click here to see the deployment progress on the Vercel dashboard](https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/{{teamSlug}}/{{projectName}}?vercel-tutor=done)."
 }
