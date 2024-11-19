@@ -26,7 +26,7 @@
     "copyFromTemplateBranchName": "commit-and-merge",
     "commitToBranchName": "first-preview-deployment",
     "commitMessage": "Add helpful links",
-    "filePaths": ["app/page.js"],
+    "filePaths": ["app/page.js"]
   },
   "commit-and-merge-merge": {
     "stepType": "merge",
