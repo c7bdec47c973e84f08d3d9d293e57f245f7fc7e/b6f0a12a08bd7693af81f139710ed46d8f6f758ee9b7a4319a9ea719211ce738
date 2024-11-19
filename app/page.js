@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import vercelSvg from "./vercel.svg";
 
 function Circle() {
@@ -25,42 +24,7 @@ function Circle() {
   );
 }
 
-function Check() {
-  return (
-    <svg
-      aria-hidden="true"
-      height="16"
-      strokeLinejoin="round"
-      viewBox="0 0 16 16"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015 14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM11.5303 6.53033L12.0607 6L11 4.93934L10.4697 5.46967L6.5 9.43934L5.53033 8.46967L5 7.93934L3.93934 9L4.46967 9.53033L5.96967 11.0303C6.26256 11.3232 6.73744 11.3232 7.03033 11.0303L11.5303 6.53033Z"
-        fill="var(--secondary)"
-      />
-    </svg>
-  );
-}
-
 export default function Home() {
-  const stepName = "commit-and-merge";
-  const [nextUrlPrefix, setNextUrlPrefix] = useState("#");
-
-  useEffect(() => {
-    const host = window.location.host;
-
-    if (host !== "localhost") {
-      setNextUrlPrefix(
-        `https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/new/vercel-tutor/step?origin=${encodeURIComponent(
-          window.location.hostname,
-        )}&stepName=`,
-      );
-    }
-  }, []);
-
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-10 row-start-2 max-w-2xl w-full font-[family-name:var(--font-geist-sans)]">
@@ -74,65 +38,48 @@ export default function Home() {
         />
         <div className="text-left font-[family-name:var(--font-geist-sans)] leading-relaxed">
           <h1 className="mb-6 font-semibold">
-            Congratulations! You&apos;ve created your first preview deployment.
+            Let&apos;s ship things on Vercel.
           </h1>
           <ul>
-            <li className="flex gap-3 items-start mb-6">
-              <span className="inline-flex mt-[0.3rem]">
-                <Check />
-              </span>
-              <span className="text-secondary">
-                <del>
-                  Next, let&apos;s try to improve this page. Maybe the triangle
-                  logo is too big. To make it easy for you, we&apos;ve already
-                  created a pull request to make the triangle smaller. Check it
-                  out:
-                </del>
-              </span>
-            </li>
-            <li className="flex gap-3 items-start mb-6">
-              <span className="inline-flex mt-[0.3rem]">
-                <Circle />
-              </span>
-              <span className="text-secondary">
-                Vercel lets you collaborate with others by commenting directly
-                on a preview deployment. Press{" "}
-                <span className="text-foreground">“c”</span> on your keyboard
-                and click on the triangle logo at the top. Leave a comment like{" "}
-                <span className="text-foreground">
-                  “The triangle looks much better now!”
-                </span>
-              </span>
-            </li>
             <li className="flex gap-3 items-start">
               <span className="inline-flex mt-[0.3rem]">
                 <Circle />
               </span>
               <span className="text-secondary">
-                Once you&apos;re done commenting, let&apos;s push one more
-                commit to add some helpful links on this page, and then merge
-                the pull request.
+                Explore our plans and documentation to learn more.
               </span>
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm h-10 font-[family-name:var(--font-geist-sans)]"
-            href={`${nextUrlPrefix}${stepName}`}
-          >
-            Push Commit and Merge Pull Request
-          </a>
-          <a
-            className="font-[family-name:var(--font-geist-sans)] text-secondary hover:underline flex items-center justify-center text-sm h-10 font-medium"
-            href={`${nextUrlPrefix}skip`}
+            className="w-full rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] h-12 font-[family-name:var(--font-geist-sans)]"
+            href="https://vercel.com/pricing?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Go to Dashboard
+            View Plans and Pricing
+          </a>
+          <a
+            className="w-full rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent h-12"
+            href="https://vercel.com/docs?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read Documentation
           </a>
         </div>
       </main>
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-secondary"
+          href="https://vercel.com/dashboard?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Go to Dashboard →
+        </a>
+      </footer>
     </div>
   );
 }
