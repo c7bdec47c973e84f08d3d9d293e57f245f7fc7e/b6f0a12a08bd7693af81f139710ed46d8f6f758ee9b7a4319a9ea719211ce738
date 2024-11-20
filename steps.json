@@ -33,6 +33,6 @@
     "checkExistingInTemplateBranchName": "commit-and-merge",
     "commitToBranchName": "first-preview-deployment",
     "filePaths": ["app/page.js"],
-    "prComment": "#### We just pushed a new commit to add some helpful links.\n\n- This creates a new preview deployment.\n\n#### Then, we merged the pull request.\n\n- This creates a new production deployment.\n\n#### Next Step:\n\n- [Click here to see the deployment progress on the Vercel dashboard](https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/{{teamSlug}}/{{projectName}}?vercel-tutor=done)."
+    "prComment": "#### We just pushed a new commit to add some helpful links.\n\n- This creates a new preview deployment (accessible via the same URL once it becomes “✅ Ready”).\n\n#### Then, we merged the pull request.\n\n- This creates a new production deployment.\n\n#### Next Step:\n\n- [Click here to see the deployment progress on the Vercel dashboard](https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/{{teamSlug}}/{{projectName}}?vercel-tutor=done)."
   }
 }
