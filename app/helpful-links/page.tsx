@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import vercelSvg from "@/app/vercel.svg";
 
 function Circle() {
@@ -26,21 +25,6 @@ function Circle() {
 }
 
 export default function Home() {
-  const stepName = "smaller-triangle";
-  const [nextUrlPrefix, setNextUrlPrefix] = useState("#");
-
-  useEffect(() => {
-    const host = window.location.host;
-
-    if (host !== "localhost") {
-      setNextUrlPrefix(
-        `https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/new/vercel-tutor/step?origin=${encodeURIComponent(
-          window.location.hostname,
-        )}&stepName=`,
-      );
-    }
-  }, []);
-
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-10 row-start-2 max-w-2xl w-full font-[family-name:var(--font-geist-sans)]">
@@ -48,43 +32,54 @@ export default function Home() {
           className="invert dark:invert-0"
           src={vercelSvg}
           alt="Vercel logo"
-          width={150}
-          height={150}
+          width={50}
+          height={50}
           priority
         />
         <div className="text-left font-[family-name:var(--font-geist-sans)] leading-relaxed">
-          <h1 className="mb-6 font-semibold">Kudos on the deployment!</h1>
+          <h1 className="mb-6 font-semibold">
+            Let&apos;s ship things on Vercel.
+          </h1>
           <ul>
             <li className="flex gap-3 items-start">
               <span className="inline-flex mt-[0.3rem]">
                 <Circle />
               </span>
               <span className="text-secondary">
-                Next, let&apos;s try to improve this page. Maybe the triangle
-                logo is too big. To make it easy for you, we&apos;ve already
-                created a pull request to make the triangle smaller. Check it
-                out:
+                Explore our plans and documentation to learn more.
               </span>
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] h-12 font-[family-name:var(--font-geist-sans)]"
-            href={`${nextUrlPrefix}${stepName}`}
-          >
-            View Pull Request
-          </a>
-          <a
-            className="font-[family-name:var(--font-geist-sans)] text-secondary hover:underline flex items-center justify-center h-12 font-medium"
-            href="https://vercel.com/dashboard?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
+            className="w-full rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] h-12 font-[family-name:var(--font-geist-sans)]"
+            href="https://vercel.com/pricing?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Go to Dashboard
+            View Plans and Pricing
+          </a>
+          <a
+            className="w-full rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent h-12"
+            href="https://vercel.com/docs?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read Documentation
           </a>
         </div>
       </main>
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-secondary"
+          href="https://vercel.com/dashboard?utm_source=vercel-tutor&utm_medium=template&utm_campaign=vercel-tutor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Go to Dashboard →
+        </a>
+      </footer>
     </div>
   );
 }
