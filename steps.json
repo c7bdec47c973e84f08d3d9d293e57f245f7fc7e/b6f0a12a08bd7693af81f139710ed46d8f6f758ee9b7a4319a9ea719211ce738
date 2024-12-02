@@ -1,7 +1,7 @@
 {
   "smaller-triangle": {
     "type": "createBranch-commit-openPr",
-    "checkMatches": {
+    "base": {
       "templatePath": "app/page.tsx",
       "branchName": "main"
     },
@@ -16,7 +16,7 @@
   },
   "helpful-links": {
     "type": "commit-merge-comment",
-    "checkMatches": {
+    "base": {
       "templatePath": "app/smaller-triangle/page.tsx",
       "branchName": "vercel-bot-patch"
     },
