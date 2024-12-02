@@ -46,17 +46,16 @@ function Check() {
 }
 
 export default function Home() {
-  const stepName = "helpful-links";
-  const [nextUrlPrefix, setNextUrlPrefix] = useState("#");
+  const [nextUrl, setNextUrl] = useState("#");
 
   useEffect(() => {
-    const host = window.location.host;
+    const host = window.location.hostname;
 
     if (host !== "localhost") {
-      setNextUrlPrefix(
+      setNextUrl(
         `https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/new/vercel-tutor/step?origin=${encodeURIComponent(
-          window.location.hostname,
-        )}&stepName=`,
+          host,
+        )}&stepName=helpful-links`,
       );
     }
   }, []);
@@ -119,7 +118,7 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground font-medium text-background hover:bg-[#383838] dark:hover:bg-[#ccc] h-12 font-[family-name:var(--font-geist-sans)]"
-            href={`${nextUrlPrefix}${stepName}`}
+            href={nextUrl}
           >
             Push Commit and Merge Pull Request
           </a>
