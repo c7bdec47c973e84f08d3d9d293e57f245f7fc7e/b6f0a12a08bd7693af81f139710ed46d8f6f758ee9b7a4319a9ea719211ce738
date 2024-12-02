@@ -52,7 +52,10 @@ export default function Home() {
           priority
         />
         <div className="text-left font-[family-name:var(--font-geist-sans)] leading-relaxed">
-          <h1 className="mb-6 font-semibold">Kudos on the deployment!</h1>
+          <h1 className="mb-6 font-semibold">
+            Congratulations! You&apos;ve created your first production
+            deployment.
+          </h1>
           <ul>
             <li className="flex gap-3 items-start">
               <span className="inline-flex mt-[0.3rem]">
