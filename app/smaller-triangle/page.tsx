@@ -53,7 +53,7 @@ export default function Home() {
 
     if (host !== "localhost") {
       setNextUrl(
-        `https://vercel-site-git-chibicode-life-4346-create-a-demo-for-de-c94e2a.vercel.sh/new/vercel-tutor/step?origin=${encodeURIComponent(
+        `https://vercel-site-git-chibicode-life-4613-ship-vercel-tutor-step-call.vercel.sh/new/vercel-tutor/step?origin=${encodeURIComponent(
           host,
         )}&stepName=helpful-links`,
       );
